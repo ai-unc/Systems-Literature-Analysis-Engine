@@ -1,0 +1,1030 @@
+{
+  "elements": [
+    {
+      "_id": "elem-19Ii7dFI",
+      "attributes": {
+        "label": "Familial Pressure",
+        "tags": [
+          "Academics and Stress"
+        ]
+      }
+    },
+    {
+      "_id": "elem-1diTDdpm",
+      "attributes": {
+        "label": "Seeking academic coaching support",
+        "tags": [
+          "Help Seeking"
+        ]
+      }
+    },
+    {
+      "_id": "elem-ByeC8RqJ",
+      "attributes": {
+        "label": "Seeking support with transition to college",
+        "tags": [
+          "Transition to college"
+        ]
+      }
+    },
+    {
+      "_id": "elem-CiJXZ8qU",
+      "attributes": {
+        "label": "",
+        "tags": [
+          "Academics and Stress"
+        ]
+      }
+    },
+    {
+      "_id": "elem-EMP194D7",
+      "attributes": {
+        "label": "Perception of Time Based Unavailability",
+        "tags": [
+          "Help Seeking"
+        ]
+      }
+    },
+    {
+      "_id": "elem-I5uh50BV",
+      "attributes": {
+        "label": "Ineffective academic support and advising",
+        "tags": [
+          "Transition to college"
+        ]
+      }
+    },
+    {
+      "_id": "elem-U75LXnKL",
+      "attributes": {
+        "label": "stress level and allostatic load",
+        "tags": [
+          "Academics",
+          "Academics and Stress",
+          "Help Seeking",
+          "social determinants"
+        ]
+      }
+    },
+    {
+      "_id": "elem-YboJzWoS",
+      "attributes": {
+        "label": "GPA/Grades/Measures of Academic Success",
+        "tags": [
+          "Academics",
+          "Academics and Stress"
+        ]
+      }
+    },
+    {
+      "_id": "elem-Zwz7NCUE",
+      "attributes": {
+        "label": "perceived academic pressure",
+        "tags": [
+          "Academics",
+          "Academics and Stress",
+          "Hustle Culture"
+        ]
+      }
+    },
+    {
+      "_id": "elem-cIpdxBLv",
+      "attributes": {
+        "label": "hustle/grind culture",
+        "tags": [
+          "Academics",
+          "Hustle Culture"
+        ]
+      }
+    },
+    {
+      "_id": "elem-cMwDCdAL",
+      "attributes": {
+        "label": "impostor syndrome",
+        "tags": [
+          "Academics",
+          "Transition to college"
+        ]
+      }
+    },
+    {
+      "_id": "elem-iP8IeaOT",
+      "attributes": {
+        "label": "competitiveness",
+        "tags": [
+          "Academics",
+          "Hustle Culture"
+        ]
+      }
+    },
+    {
+      "_id": "elem-wZyCe5Qg",
+      "attributes": {
+        "label": "Utilizing Transition to College Resources",
+        "tags": [
+          "Campus Culture",
+          "Transition to college"
+        ],
+        "community": 5,
+        "degree": 4,
+        "metrics::last": 4
+      }
+    },
+    {
+      "_id": "elem-x9ZJRQY5",
+      "attributes": {
+        "label": "psychological distress and suicidality",
+        "tags": [
+          "Academics and Stress"
+        ]
+      }
+    },
+    {
+      "_id": "elem-xxG0aNCF",
+      "attributes": {
+        "label": "use of helpful coping skills",
+        "tags": [
+          "The Student",
+          "Help Seeking",
+          "protective factors"
+        ]
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-5kgzm04Z",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Transition to college"
+        ]
+      },
+      "from": "elem-I5uh50BV",
+      "to": "elem-wZyCe5Qg"
+    },
+    {
+      "_id": "conn-7bgbIP7q",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Academics and Stress"
+        ],
+        "label": "",
+        "description": "Acute events leading to distress and suicidality."
+      },
+      "from": "elem-YboJzWoS",
+      "to": "elem-x9ZJRQY5"
+    },
+    {
+      "_id": "conn-7yJvvq6H",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "label": ""
+      },
+      "from": "elem-YboJzWoS",
+      "to": "elem-cMwDCdAL"
+    },
+    {
+      "_id": "conn-BdfcpTN1",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Transition to college"
+        ]
+      },
+      "from": "elem-wZyCe5Qg",
+      "to": "elem-cMwDCdAL"
+    },
+    {
+      "_id": "conn-CDkQw3CB",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Hustle Culture"
+        ]
+      },
+      "from": "elem-iP8IeaOT",
+      "to": "elem-cIpdxBLv"
+    },
+    {
+      "_id": "conn-Cx6bZl8x",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-YboJzWoS",
+      "to": "elem-Zwz7NCUE"
+    },
+    {
+      "_id": "conn-DiZbCpUd",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Hustle Culture"
+        ]
+      },
+      "from": "elem-cIpdxBLv",
+      "to": "elem-Zwz7NCUE"
+    },
+    {
+      "_id": "conn-FFkVybgP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+"
+      },
+      "from": "elem-cMwDCdAL",
+      "to": "elem-Zwz7NCUE"
+    },
+    {
+      "_id": "conn-GPrcMDrx",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Transition to college"
+        ]
+      },
+      "from": "elem-ByeC8RqJ",
+      "to": "elem-I5uh50BV"
+    },
+    {
+      "_id": "conn-JpTFWRBE",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-U75LXnKL",
+      "to": "elem-x9ZJRQY5"
+    },
+    {
+      "_id": "conn-Lf52znN2",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Transition to college"
+        ]
+      },
+      "from": "elem-cMwDCdAL",
+      "to": "elem-ByeC8RqJ"
+    },
+    {
+      "_id": "conn-McaCR5O3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-x9ZJRQY5",
+      "to": "elem-U75LXnKL"
+    },
+    {
+      "_id": "conn-SeOzsG6g",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-19Ii7dFI",
+      "to": "elem-U75LXnKL"
+    },
+    {
+      "_id": "conn-c8ntjeeS",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-U75LXnKL",
+      "to": "elem-YboJzWoS"
+    },
+    {
+      "_id": "conn-ciaNFhTk",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "from": "elem-U75LXnKL",
+      "to": "elem-EMP194D7"
+    },
+    {
+      "_id": "conn-cktPac0i",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "from": "elem-EMP194D7",
+      "to": "elem-U75LXnKL"
+    },
+    {
+      "_id": "conn-f3MLJkC3",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Transition to college"
+        ]
+      },
+      "from": "elem-ByeC8RqJ",
+      "to": "elem-wZyCe5Qg"
+    },
+    {
+      "_id": "conn-kS8YgexO",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-YboJzWoS",
+      "to": "elem-19Ii7dFI"
+    },
+    {
+      "_id": "conn-ka0n2hNB",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "from": "elem-U75LXnKL",
+      "to": "elem-1diTDdpm"
+    },
+    {
+      "_id": "conn-qwSQyi90",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "from": "elem-EMP194D7",
+      "to": "elem-1diTDdpm"
+    },
+    {
+      "_id": "conn-uKuHbIMX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Hustle Culture"
+        ],
+        "description": "Imposter syndrome and perceived academic pressure triggers a compensatory effect which increases competitiveness. In other words, everyone pretends they are doing extremely well because they are afraid that other people will see them as imposters or strugglers, leading to increased competition."
+      },
+      "from": "elem-Zwz7NCUE",
+      "to": "elem-iP8IeaOT"
+    },
+    {
+      "_id": "conn-uvdaSq8F",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Hustle Culture"
+        ]
+      },
+      "from": "elem-cIpdxBLv",
+      "to": "elem-iP8IeaOT"
+    },
+    {
+      "_id": "conn-w8r3EGcf",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Academics and Stress"
+        ]
+      },
+      "from": "elem-Zwz7NCUE",
+      "to": "elem-U75LXnKL"
+    },
+    {
+      "_id": "conn-wUgSf1qP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "from": "elem-xxG0aNCF",
+      "to": "elem-U75LXnKL"
+    },
+    {
+      "_id": "conn-xjqmwOSP",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "from": "elem-1diTDdpm",
+      "to": "elem-xxG0aNCF"
+    }
+  ],
+  "loops": [
+    {
+      "_id": "loop-Mda8WeRH",
+      "attributes": {
+        "label": "Stress impedes academic performance (R)",
+        "tags": [
+          "Academics and Stress"
+        ],
+        "loop type": "Reinforcing"
+      },
+      "connections": [
+        "conn-Cx6bZl8x",
+        "conn-w8r3EGcf",
+        "conn-c8ntjeeS"
+      ]
+    },
+    {
+      "_id": "loop-RDJNLFz1",
+      "attributes": {
+        "label": "Loss of trust (B)",
+        "tags": [
+          "Transition to college"
+        ],
+        "loop type": "Balancing"
+      },
+      "connections": [
+        "conn-GPrcMDrx",
+        "conn-5kgzm04Z"
+      ]
+    },
+    {
+      "_id": "loop-RpU1j3U5",
+      "attributes": {
+        "label": "More stress less time (R)",
+        "loop type": "Reinforcing",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "connections": [
+        "conn-ciaNFhTk",
+        "conn-cktPac0i"
+      ]
+    },
+    {
+      "_id": "loop-ctOxJiWo",
+      "attributes": {
+        "label": "Transitioning to college  (B)",
+        "tags": [
+          "Transition to college"
+        ],
+        "loop type": "Balancing"
+      },
+      "connections": [
+        "conn-Lf52znN2",
+        "conn-f3MLJkC3",
+        "conn-BdfcpTN1"
+      ]
+    },
+    {
+      "_id": "loop-cxWRua9q",
+      "attributes": {
+        "label": "Managing family expectations (R)",
+        "tags": [
+          "Academics and Stress"
+        ],
+        "loop type": "Reinforcing"
+      },
+      "connections": [
+        "conn-c8ntjeeS",
+        "conn-kS8YgexO",
+        "conn-SeOzsG6g"
+      ]
+    },
+    {
+      "_id": "loop-n10WFQYB",
+      "attributes": {
+        "label": "Hustling and competing (R)",
+        "tags": [
+          "Hustle Culture"
+        ],
+        "loop type": "Reinforcing"
+      },
+      "connections": [
+        "conn-DiZbCpUd",
+        "conn-uKuHbIMX",
+        "conn-CDkQw3CB"
+      ]
+    },
+    {
+      "_id": "loop-onEXKJNk",
+      "attributes": {
+        "label": "Seeking help (B)",
+        "loop type": "Balancing",
+        "tags": [
+          "Help Seeking"
+        ]
+      },
+      "connections": [
+        "conn-xjqmwOSP",
+        "conn-wUgSf1qP",
+        "conn-ka0n2hNB"
+      ]
+    },
+    {
+      "_id": "loop-pUg58b4l",
+      "attributes": {
+        "label": "Stress creates distress (R)",
+        "tags": [
+          "Academics and Stress"
+        ],
+        "loop type": "Reinforcing"
+      },
+      "connections": [
+        "conn-McaCR5O3",
+        "conn-JpTFWRBE"
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "_id": "map-QZZcMA9e",
+      "name": "Academic Pressure Cooker",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-VKQaxIVX",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-4d6lc4TK",
+          "position": {
+            "x": 75.89166558698314,
+            "y": -106.35945970359866
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-xxG0aNCF"
+        },
+        {
+          "_id": "node-69D69cTY",
+          "position": {
+            "x": -52.64958470090269,
+            "y": -480.7478477823273
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-EMP194D7"
+        },
+        {
+          "_id": "node-DoBHqlSW",
+          "position": {
+            "x": -565.5532478674439,
+            "y": -204.93447741799213
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-Zwz7NCUE"
+        },
+        {
+          "_id": "node-DwmhFPQA",
+          "position": {
+            "x": -1280.452676867699,
+            "y": -187.42590545698695
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-wZyCe5Qg"
+        },
+        {
+          "_id": "node-KTUAusGd",
+          "position": {
+            "x": -254.01052002447744,
+            "y": -164.61808978312516
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-U75LXnKL"
+        },
+        {
+          "_id": "node-Pizzh4XS",
+          "position": {
+            "x": -947.2284174239011,
+            "y": -36.936766951251464
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-cMwDCdAL"
+        },
+        {
+          "_id": "node-UMeZSmj2",
+          "position": {
+            "x": -1165.4502591149544,
+            "y": -2.0271164472054224
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-I5uh50BV"
+        },
+        {
+          "_id": "node-VdwbLwH1",
+          "position": {
+            "x": -669.5374629305531,
+            "y": -303.444651679567
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-iP8IeaOT"
+        },
+        {
+          "_id": "node-akveks0e",
+          "position": {
+            "x": -477.65787328814037,
+            "y": 14.552251538559341
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-x9ZJRQY5"
+        },
+        {
+          "_id": "node-dYlWfnps",
+          "position": {
+            "x": -1124.1443834307508,
+            "y": 224.85311249616154
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-ByeC8RqJ"
+        },
+        {
+          "_id": "node-daVQYRAr",
+          "position": {
+            "x": -707.9135220744154,
+            "y": 88.56062000055697
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-YboJzWoS"
+        },
+        {
+          "_id": "node-gZv2OLat",
+          "position": {
+            "x": -287.8828843987191,
+            "y": 122.02166376256997
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-CiJXZ8qU"
+        },
+        {
+          "_id": "node-n1TpYWHl",
+          "position": {
+            "x": -455.2520610566145,
+            "y": -334.4938496381364
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-cIpdxBLv"
+        },
+        {
+          "_id": "node-nzILgm0f",
+          "position": {
+            "x": -383.7502604321295,
+            "y": 116.77821078992056
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-19Ii7dFI"
+        },
+        {
+          "_id": "node-plu7omEv",
+          "position": {
+            "x": -29.223071127701942,
+            "y": -283.71530558413826
+          },
+          "pinned": true,
+          "style": {},
+          "element": "elem-1diTDdpm"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-2DeGudb4",
+          "curvature": 0.8340761095658197,
+          "style": {},
+          "connection": "conn-f3MLJkC3"
+        },
+        {
+          "_id": "edge-2w3WHIB6",
+          "style": {},
+          "connection": "conn-ka0n2hNB"
+        },
+        {
+          "_id": "edge-4rcqCOzb",
+          "curvature": -0.0003071693554670504,
+          "style": {},
+          "connection": "conn-GPrcMDrx"
+        },
+        {
+          "_id": "edge-5e1GvocY",
+          "curvature": 0.4834630350194561,
+          "style": {},
+          "connection": "conn-qwSQyi90"
+        },
+        {
+          "_id": "edge-6UIAPBIR",
+          "curvature": 0.708259669267765,
+          "style": {},
+          "connection": "conn-7yJvvq6H"
+        },
+        {
+          "_id": "edge-AFlX4PXG",
+          "curvature": -0.2929239905440463,
+          "style": {},
+          "connection": "conn-kS8YgexO"
+        },
+        {
+          "_id": "edge-DKOi9DMw",
+          "curvature": 0.284061548641273,
+          "style": {},
+          "connection": "conn-w8r3EGcf"
+        },
+        {
+          "_id": "edge-LvlzogYw",
+          "curvature": 0.34907758027366403,
+          "style": {},
+          "connection": "conn-wUgSf1qP"
+        },
+        {
+          "_id": "edge-MDFN1fQ9",
+          "curvature": 0.8903890750399684,
+          "style": {},
+          "connection": "conn-CDkQw3CB"
+        },
+        {
+          "_id": "edge-O9upspDE",
+          "curvature": 1.0217056452840199,
+          "style": {},
+          "connection": "conn-c8ntjeeS"
+        },
+        {
+          "_id": "edge-Rvb6Cmjl",
+          "curvature": -0.5653263851642116,
+          "style": {},
+          "connection": "conn-McaCR5O3"
+        },
+        {
+          "_id": "edge-U5l9joTQ",
+          "curvature": 0.35818935691373693,
+          "style": {},
+          "connection": "conn-DiZbCpUd"
+        },
+        {
+          "_id": "edge-VRRWMDR4",
+          "curvature": -0.06875953130719793,
+          "style": {},
+          "connection": "conn-7bgbIP7q"
+        },
+        {
+          "_id": "edge-VkUMBNS6",
+          "curvature": 0.43371075579126717,
+          "style": {},
+          "connection": "conn-BdfcpTN1"
+        },
+        {
+          "_id": "edge-begG8nzZ",
+          "curvature": 0.2090814403347465,
+          "style": {},
+          "connection": "conn-xjqmwOSP"
+        },
+        {
+          "_id": "edge-bglharQz",
+          "curvature": -0.04749435029268551,
+          "style": {},
+          "connection": "conn-5kgzm04Z"
+        },
+        {
+          "_id": "edge-fLAGYQ5f",
+          "curvature": 0.40426488413350214,
+          "style": {},
+          "connection": "conn-uKuHbIMX"
+        },
+        {
+          "_id": "edge-khkIp00w",
+          "curvature": -0.6011926189786072,
+          "style": {},
+          "connection": "conn-JpTFWRBE"
+        },
+        {
+          "_id": "edge-mhpPtylM",
+          "curvature": 0.3167726506147283,
+          "style": {},
+          "connection": "conn-Lf52znN2"
+        },
+        {
+          "_id": "edge-oYutrUqI",
+          "curvature": 0.3075196225442918,
+          "style": {},
+          "connection": "conn-uvdaSq8F"
+        },
+        {
+          "_id": "edge-tm9SfCuj",
+          "curvature": -0.32595852936246855,
+          "style": {},
+          "connection": "conn-SeOzsG6g"
+        },
+        {
+          "_id": "edge-wyl6D4OZ",
+          "curvature": 0.4075619174047353,
+          "style": {},
+          "connection": "conn-Cx6bZl8x"
+        },
+        {
+          "_id": "edge-xH6pDZRx",
+          "curvature": 1.8445787179776196,
+          "style": {},
+          "connection": "conn-cktPac0i"
+        },
+        {
+          "_id": "edge-z7N676hg",
+          "curvature": 0.3830898373810939,
+          "style": {},
+          "connection": "conn-ciaNFhTk"
+        },
+        {
+          "_id": "edge-ze097W9i",
+          "curvature": 0.35370748308487643,
+          "style": {},
+          "connection": "conn-FFkVybgP"
+        }
+      ],
+      "loops": [
+        {
+          "_id": "labl-HO03FXkc",
+          "position": {
+            "x": -439.95059693615445,
+            "y": 179.22105153602485
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-cxWRua9q"
+        },
+        {
+          "_id": "labl-P8d2CDAe",
+          "position": {
+            "x": -366.28579643998614,
+            "y": -66.64633611845157
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-pUg58b4l"
+        },
+        {
+          "_id": "labl-YlgKb5XD",
+          "position": {
+            "x": -561.5919036198251,
+            "y": -349.06742979322183
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-n10WFQYB"
+        },
+        {
+          "_id": "labl-dMHqIkkO",
+          "position": {
+            "x": -1079.9478364169536,
+            "y": -78.86203764038257
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-RDJNLFz1"
+        },
+        {
+          "_id": "labl-iLPkyvEM",
+          "position": {
+            "x": 84.9052769234017,
+            "y": -368.2352419753124
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-RpU1j3U5"
+        },
+        {
+          "_id": "labl-jfjPBaIa",
+          "position": {
+            "x": -1286.3193778334028,
+            "y": 67.14379304785392
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-ctOxJiWo"
+        },
+        {
+          "_id": "labl-ukQO7LWI",
+          "position": {
+            "x": -562.2314521669056,
+            "y": -89.8989770113643
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-Mda8WeRH"
+        },
+        {
+          "_id": "labl-zHjydf7m",
+          "position": {
+            "x": -69.08762112301494,
+            "y": -203.40288515246388
+          },
+          "pinned": true,
+          "style": {},
+          "loop": "loop-onEXKJNk"
+        }
+      ]
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-VKQaxIVX",
+      "name": "Academic Pressure Cooker 2",
+      "style": "@view \"Overall View\" {\n  @import \"base-settings\";\n  @settings {\n  template: causal-loop;\n  showcase: [\"tags\"!=\"objective hide tag\"] !strict;\n  }\n\n}\n\n@view \"Success and Stress Group\" {\n  @import \"base-settings\";\n  @settings {\n  template: causal-loop;\n  showcase: [\"tags\"=\"Academics and Stress\"] !strict;\n  }\n\n}\n\n@view \"Transition to College Group\" {\n  @import \"base-settings\";\n\n  @settings {\n  template: causal-loop;\n  showcase: [\"tags\"=\"Transition to college\"], !strict;\n  }\n\n}\n\n@view \"Hustle Culture Group\" {\n  @import \"base-settings\";\n\n  @settings {\n  template: causal-loop;\n  showcase: [\"tags\"=\"Hustle Culture\"], !strict;\n  }\n\n}\n\n@view \"Help Seeking Group\" {\n  @import \"base-settings\";\n\n  @settings {\n  template: causal-loop;\n  showcase: [\"tags\"=\"Help Seeking\"], !strict;\n  }\n\n}\n\n@controls {\n  top {\n    view-toggle {\n      options: \"Overall View\", \"Success and Stress Group\", \"Help Seeking Group\", \"Hustle Culture Group\", \"Transition to College Group\";\n      as: buttons;\n    }\n  }\n\n  bottom-left {}\n}\n\n@settings {\n  template: causal-loop;\n  showcase: [\"tags\"!=\"objective hide tag\"] !strict;\n  background-color: white;\n}\n\n"
+    }
+  ]
+}

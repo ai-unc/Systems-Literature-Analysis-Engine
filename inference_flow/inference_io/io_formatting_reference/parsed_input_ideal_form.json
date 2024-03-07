@@ -1,0 +1,36 @@
+{
+    "Relations": [
+        {
+            "VariableOneName": "Cognitive distraction",
+            "VariableTwoName": "Rumination",
+            "RelationshipClassification": "Inverse"        },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "Sadness",
+            "RelationshipClassification": "Direct"        },
+        {
+            "VariableOneName": "Rumination",
+            "VariableTwoName": "Sadness",
+            "RelationshipClassification": "Direct"    },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "Direct"      },
+        {
+            "VariableOneName": "Rumination Induction",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "Direct"       },
+        {
+            "VariableOneName": "Induced distraction",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "Direct"     },
+        {
+            "VariableOneName": "Forced-failure stress",
+            "VariableTwoName": "RSA withdrawal",
+            "RelationshipClassification": "Direct"        },
+        {
+            "VariableOneName": "MDD",
+            "VariableTwoName": "Cardiovascular disease",
+            "RelationshipClassification": "Direct"        }
+    ]
+}

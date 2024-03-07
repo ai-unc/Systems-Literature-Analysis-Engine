@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "name": "SLAE Test 2",
+  "description": "",
+  "proxyImages": true,
+  "defaultMap": "map-Br2A7aoL",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "_id": "attr-Gvk7D12h",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "+",
+        "-",
+        "direct",
+        ""
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-wjSIC9RP",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-ppUN4M7s",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "variable"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-dHJUOuU5",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-hZ6en2jv",
+      "name": "Loop Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-y2KnmMMO",
+      "name": "Tags",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-EmNvL48w",
+      "name": "correctness",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-vA8FvCWr",
+      "name": "papers examined",
+      "format": "number",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-4hnpvQSI",
+      "attributes": {
+        "label": "Rumination",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-L6GbaBRq",
+      "attributes": {
+        "label": "Forced-failure stress",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-TUR89Ujv",
+      "attributes": {
+        "label": "RSA withdrawal",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-aO61017L",
+      "attributes": {
+        "label": "Cognitive distraction",
+        "element type": "variable"
+      }
+    },
+    {
+      "_id": "elem-tjUoMk0p",
+      "attributes": {
+        "label": "Depression",
+        "element type": "variable"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-Lwmu8zjX",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "description": "",
+        "correctness": 0,
+        "connection type": "+",
+        "papers examined": 1
+      },
+      "from": "elem-L6GbaBRq",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-OOcAJGHy",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-"
+      },
+      "from": "elem-4hnpvQSI",
+      "to": "elem-TUR89Ujv"
+    },
+    {
+      "_id": "conn-Zso5RgCh",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-",
+        "description": "",
+        "correctness": 0
+      },
+      "from": "elem-aO61017L",
+      "to": "elem-4hnpvQSI"
+    },
+    {
+      "_id": "conn-dHZXTmfc",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "-"
+      },
+      "from": "elem-TUR89Ujv",
+      "to": "elem-tjUoMk0p"
+    },
+    {
+      "_id": "conn-jId3i5v0",
+      "direction": "directed",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "+",
+        "description": "",
+        "correctness": "0"
+      },
+      "from": "elem-4hnpvQSI",
+      "to": "elem-tjUoMk0p"
+    }
+  ],
+  "loops": [],
+  "maps": [
+    {
+      "_id": "map-ZnjR0jDE",
+      "name": "Testing_Map",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-WtSLdGSc",
+      "defaultElementBehavior": "fixed",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-1bNfkt9E",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-4hnpvQSI"
+        },
+        {
+          "_id": "node-51uw67hu",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-TUR89Ujv"
+        },
+        {
+          "_id": "node-C246PVFB",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-tjUoMk0p"
+        },
+        {
+          "_id": "node-QkOL703o",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-aO61017L"
+        },
+        {
+          "_id": "node-j32gBTPQ",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-L6GbaBRq"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-3AE5gfhK",
+          "style": {},
+          "connection": "conn-OOcAJGHy"
+        },
+        {
+          "_id": "edge-8UJ88foK",
+          "style": {},
+          "connection": "conn-Zso5RgCh"
+        },
+        {
+          "_id": "edge-BbSwrqOg",
+          "style": {},
+          "connection": "conn-jId3i5v0"
+        },
+        {
+          "_id": "edge-SUx5aAop",
+          "style": {},
+          "connection": "conn-Lwmu8zjX"
+        },
+        {
+          "_id": "edge-eVT9lmw6",
+          "style": {},
+          "connection": "conn-dHZXTmfc"
+        }
+      ],
+      "loops": []
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-WtSLdGSc",
+      "name": "Testing_View",
+      "style": "@settings {\n  template: causal-loop;\n  layout: force;\n  layout-preset: dense;\n  connection-size: 6;\n  connection-curvature: 0.28;\n}\n\n/* Correctness */\nconnection {\n  color: scale(\"correctness\", #FF2D00, #FF9B85);\n}\n\n/* Papers Examined */\nconnection {\n  scale: scale(\"papers examined\", 1, 2);\n}\n\n"
+    },
+    {
+      "_id": "pers-spuDJRKE",
+      "name": "Untitled view",
+      "style": "@settings {\n  template: causal-loop;\n  layout: force;\n  layout-preset: dense;\n}\n\n"
+    }
+  ]
+}

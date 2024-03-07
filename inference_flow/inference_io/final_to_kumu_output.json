@@ -1,0 +1,76 @@
+{
+    "elements": [
+        {
+            "label": "Cognitive distraction",
+            "type": "variable"
+        },
+        {
+            "label": "Rumination",
+            "type": "variable"
+        },
+        {
+            "label": "RSA withdrawal",
+            "type": "variable"
+        },
+        {
+            "label": "Depression",
+            "type": "variable"
+        },
+        {
+            "label": "Forced-failure stress",
+            "type": "variable"
+        }
+    ],
+    "connections": [
+        {
+            "from": "Cognitive distraction",
+            "to": "Rumination",
+            "attributes": {
+                "connection type": "-",
+                "description": "Below are a summary of 5 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: inverse\nOriginal user opinion: inverse\nSupporting text used in extraction: We hypothesized that cognitive distraction would be negatively correlated with rumination.\n\nPaper number 1\nOpinion from: PSP478785.indd\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: inverse\nOriginal user opinion: inverse\nSupporting text used in extraction: Based on evidence from 'choking under pressure', it is plausible to assume that rumination as a predominantly verbal phenomenon mainly absorbs verbal capacities. Using a visual but not a verbal memory test may cause less interference with rumination and therefore mask possible relationships between rumination and memory.\n\nPaper number 2\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: inverse\nSupporting text used in extraction: The intensity of social anxiety correlates with rumination over time in patients undergoing cognitive\u2013behavioral therapy for social anxiety disorder.\n\nPaper number 3\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: not applicable\nOriginal user opinion: inverse\nSupporting text used in extraction: We evaluated the cognitive performance of patients with CFS using standardized verbal and visual memory tests, as well as sustained attention, working memory, and verbal and visual episodic memory.\n\nPaper number 4\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: Not applicable\nOriginal user opinion: inverse\nSupporting text used in extraction: Results are mixed regarding whether interventions like CWMT improve rumination, with studies finding support for improvements in some residual symptoms like objective cognitive deficits, but not all, symptoms like subjective cognitive deficits, depressive symptoms, and some aspects of rumination.\n\n",
+                "correctness": 0.6,
+                "papers Examined": 5
+            }
+        },
+        {
+            "from": "RSA withdrawal",
+            "to": "Depression",
+            "attributes": {
+                "connection type": "+",
+                "description": "Below are a summary of 7 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: direct\nOriginal user opinion: inverse\nSupporting text used in extraction: In our study, we found that RSA withdrawal was correlated with depression symptoms.\n\nPaper number 1\nOpinion from: Early Maladaptive Schemas: A Comparison Between Bipolar Disorder and Major Depressive Disorder\nPaper DOI <link>: 10.1002/cpp.1896\nOpinion extracted: Direct\nOriginal user opinion: inverse\nSupporting text used in extraction: The present study compared EMSs between BD and MDD during remission. The results revealed that the BD group scored higher than the MDD group on most of the EMS scales, and for seven EMSs, the differences were statistically significant: abandonment, failure to achieve, and insufficient self-control, subjugation, unrelenting standards, enmeshment and entitlement.\n\nPaper number 2\nOpinion from: PSP478785.indd\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: not applicable\nOriginal user opinion: inverse\nSupporting text used in extraction: The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.\n\nPaper number 3\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: inverse\nSupporting text used in extraction: The results of the structural equation model showed that rejection sensitivity may affect depressive symptoms through rumination and social anxiety symptoms, contributing to the development of anxious-depressive attack.\n\nPaper number 4\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: direct\nOriginal user opinion: inverse\nSupporting text used in extraction: The patients with CFS were significantly more anxious, more depressed, and more tired than the healthy controls.\n\nPaper number 5\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: Not applicable\nOriginal user opinion: inverse\nSupporting text used in extraction: No significant improvements in rumination were found following the intervention at one- and two-year follow-up, suggesting that there may not be a direct relationship between RSA withdrawal and depression.\n\nPaper number 6\nOpinion from: Brain activation patterns in major depressive disorder and work stress-related long-term sick leave \nPaper DOI <link>: 10.3109/10253890.2011.646347\nOpinion extracted: Direct\nOriginal user opinion: inverse\nSupporting text used in extraction: The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks. However, during the more demanding cognitive task (n-back), the LTSL subjects showed a reduction in prefrontal cortex activation. Specifically, a group difference was observed in the right dorsolateral and left ventrolateral prefrontal cortex.\n\n",
+                "correctness": 0.14285714285714285,
+                "papers Examined": 7
+            }
+        },
+        {
+            "from": "Rumination",
+            "to": "Depression",
+            "attributes": {
+                "connection type": "+",
+                "description": "Below are a summary of 7 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Childhood Maltreatment Was Correlated With the Decreased Cortical Function in Depressed Patients Under Social Stress in a Working Memory Task: A Pilot Study\nPaper DOI <link>: 10.3389/fpsyt.2021.671574\nOpinion extracted: direct\nOriginal user opinion: direct\nSupporting text used in extraction: Previous studies have shown a strong positive correlation between rumination and depression.\n\nPaper number 1\nOpinion from: Early Maladaptive Schemas: A Comparison Between Bipolar Disorder and Major Depressive Disorder\nPaper DOI <link>: 10.1002/cpp.1896\nOpinion extracted: Direct\nOriginal user opinion: direct\nSupporting text used in extraction: The present study compared EMSs between BD and MDD during remission. The results revealed that the BD group scored higher than the MDD group on most of the EMS scales, and for seven EMSs, the differences were statistically significant: abandonment, failure to achieve, and insufficient self-control, subjugation, unrelenting standards, enmeshment and entitlement.\n\nPaper number 2\nOpinion from: PSP478785.indd\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: direct\nOriginal user opinion: direct\nSupporting text used in extraction: The aim of the current study was to determine whether there is a connection between everyday-life rumination and cognitive impairments in attention, verbal working memory, memory, executive functions, and processing speed, respectively, in MDD patients.\n\nPaper number 3\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: direct\nSupporting text used in extraction: The results of the structural equation model showed that rejection sensitivity may affect depressive symptoms through rumination and social anxiety symptoms, contributing to the development of anxious-depressive attack.\n\nPaper number 4\nOpinion from: Cognitive deficits in patients with chronic fatigue syndrome compared to those with major depressive disorder and healthy controls\nPaper DOI <link>: 10.1016/j.clineuro.2010.12.002\nOpinion extracted: not applicable\nOriginal user opinion: direct\nSupporting text used in extraction: The patients with CFS were significantly more anxious, more depressed, and more tired than the healthy controls.\n\nPaper number 5\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: Direct\nOriginal user opinion: direct\nSupporting text used in extraction: Rumination is a central risk factor following remission of mood symptoms and predicts relapse in remitted populations, suggesting a potential relationship between rumination and depression.\n\nPaper number 6\nOpinion from: Brain activation patterns in major depressive disorder and work stress-related long-term sick leave \nPaper DOI <link>: 10.3109/10253890.2011.646347\nOpinion extracted: Not applicable\nOriginal user opinion: direct\nSupporting text used in extraction: The main objective of this study was to compare memory-related brain activity patterns and diurnal cortisol between acute unmedicated patients with unipolar major depression and patients on LTSL due to work stress. The fMRI results showed pronounced similarities in activation patterns across the groups, suggesting largely intact functional networks.\n\n",
+                "correctness": 0.8571428571428571,
+                "papers Examined": 7
+            }
+        },
+        {
+            "from": "Rumination",
+            "to": "RSA withdrawal",
+            "attributes": {
+                "connection type": "+",
+                "description": "Below are a summary of 3 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: PSP478785.indd\nPaper DOI <link>: 10.1159/000478785\nOpinion extracted: not applicable\nOriginal user opinion: inverse\nSupporting text used in extraction: The current study aims at answering the above-mentioned questions, thus closing a gap in research by systematically analyzing the relationship between assessed everyday-life rumination and different cognitive functions in MDD by controlling for as many influencing factors as possible.\n\nPaper number 1\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: inverse\nSupporting text used in extraction: The results of the structural equation model showed that rejection sensitivity may affect depressive symptoms through rumination and social anxiety symptoms, contributing to the development of anxious-depressive attack.\n\nPaper number 2\nOpinion from: Improvement in self-reported cognitive functioning but not in rumination following online working memory training in a two-year follow-up study of remitted major depressive disorder\nPaper DOI <link>: 10.3389/fpsyt.2023.1163073\nOpinion extracted: Not applicable\nOriginal user opinion: inverse\nSupporting text used in extraction: Rumination is an emotion regulation strategy where one passively broods over self-related negative experiences and is hypothesized to be related to deficits in working memory (WM) for negative material, sometimes termed hot-cognition.\n\n",
+                "correctness": 0.3333333333333333,
+                "papers Examined": 3
+            }
+        },
+        {
+            "from": "Forced-failure stress",
+            "to": "RSA withdrawal",
+            "attributes": {
+                "connection type": "+",
+                "description": "Below are a summary of 1 relevant papers and what they implied about this relationship.\n\nPaper number 0\nOpinion from: Effect of rejection sensitivity on the development of anxious-depressive attack in Japanese outpatients: The mediating roles of rumination, social anxiety, and depressive symptoms\nPaper DOI <link>: 10.3389/fpsyg.2022.1016879\nOpinion extracted: Direct\nOriginal user opinion: direct\nSupporting text used in extraction: In this study, we aimed to examine the mechanism by which rejection sensitivity influences the development of anxious-depressive attack. The results of the structural equation model showed that rejection sensitivity may demonstrate a direct effect on the occurrence of ADA.\n\n",
+                "correctness": 1.0,
+                "papers Examined": 1
+            }
+        }
+    ]
+}
