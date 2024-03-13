@@ -1,15 +1,15 @@
 #Debug
-if False:
+if True:
     import sys
     print(sys.path)
     exit()
 import yaml
 import pathlib
 import json
-from utils.matcher.matcher import match_relations_to_papers
+from matcher.matcher import match_relations_to_papers
 from pipelines.captured_relations_pipeline.captured_relations_pipeline import extract_relationships
-from utils.parsers.to_kumu_parser import pipeline_to_kumu
-from utils.parsers.from_kumu_parser import user_input_to_list_of_relations
+from parsers.to_kumu_parser import pipeline_to_kumu
+from parsers.from_kumu_parser import user_input_to_list_of_relations
 from pprint import pprint
 
 """

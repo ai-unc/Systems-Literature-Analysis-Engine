@@ -11,8 +11,10 @@ import os
 from copy import deepcopy
 
 DATASET_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset")
-SETTINGS_PATH = pathlib.Path("./pipeline_settings.yaml")
-DEBUG_PATH = pathlib.Path("evaluation_outputs/captured_relations_results/debug_outputs")
+SETTINGS_PATH = pathlib.Path("./pipelines/captured_relations_pipeline/pipeline_settings.yaml")
+DEBUG_PATH = pathlib.Path("./pipelines/captured_relations_pipeline/debug_outputs")
+EVAL_OUTPUTS_PATH = pathlib.Path("./pipelines/captured_relations_pipeline/eval_results/results.txt")
+INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/test_paper_2.json")
 MULTIPAPER = True
 
 def compare(prediction, ground_truth):
@@ -43,7 +45,7 @@ def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbo
         predictions = captured_relations_pipeline(input_file_path, settings_path=settings_path, debug_path=debug_path)
     else:
         predictions = deepcopy(ground_truth)
-        # Change predictions for testing
+        # Test evaluator without inference
         predictions["PaperContents"] = ""
         predictions["Relations"][0]["RelationshipClassification"] = "inverse"
         print("datatype of prediction", type(predictions))
@@ -80,7 +82,7 @@ def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbo
     # aggregate_results["CausalIdentificationScore"] /= len(results)
     print(aggregate_results)
 
-    with open("./pipelines/captured_relations_pipeline/eval_results/results.txt", "a+") as f:
+    with open(EVAL_OUTPUTS_PATH, "a+") as f:
         f.write(f"\nResults for {input_file_path.name}\n")
         f.write(json.dumps(aggregate_results, indent=2))
         f.write("\n")
@@ -94,7 +96,7 @@ def evaluate_one_paper(input_file_path, settings_path, strict_length=True, verbo
     return aggregate_results
 
 if MULTIPAPER:
-    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
+    with open(EVAL_OUTPUTS_PATH, "w") as f:
         f.write(f"New multi file evaluation source from path: {DATASET_PATH}")
     dir, _, files = next(os.walk(DATASET_PATH))
     full_evaluator_aggregate_results = []
@@ -102,13 +104,12 @@ if MULTIPAPER:
         print("\n\nEvaluating: ", file)
         result = evaluate_one_paper(pathlib.Path(dir)/pathlib.Path(file), settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)
         full_evaluator_aggregate_results.append(result)
-    with open("evaluation_outputs/captured_relations_results/results.txt", "a+") as f:
+    with open(EVAL_OUTPUTS_PATH, "a+") as f:
         f.write("\n\nAggregated_Results:\n")
         for i in full_evaluator_aggregate_results:
             f.write(f"{i['file']}\n")
             f.write(f"{i}\n")
 else:
-    with open("evaluation_outputs/captured_relations_results/results.txt", "w") as f:
+    with open(EVAL_OUTPUTS_PATH, "w") as f:
         f.write(f"New single file evaluation")
-    INPUT_FILE_PATH = pathlib.Path("evaluation_datasets/multi_relation_dataset/test_paper_2.json")
     result = evaluate_one_paper(INPUT_FILE_PATH, settings_path=SETTINGS_PATH, verbose=True, debug_path=DEBUG_PATH)

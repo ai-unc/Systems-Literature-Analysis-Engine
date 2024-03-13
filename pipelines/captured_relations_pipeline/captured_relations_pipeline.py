@@ -26,7 +26,6 @@ openai.api_key = key
 
 # Filepath Debug
 mypath = os.path.abspath("")
-        
 
 class SingleRelation(BaseModel):
     VariableOneName: str
@@ -35,7 +34,6 @@ class SingleRelation(BaseModel):
     Reasoning: str
     RelationshipClassification: str
     
-
     @validator("RelationshipClassification")
     def allowed_classifications(cls, field):
         if field.lower() in {"direct", "inverse", "not applicable", "uncorrelated"}:
@@ -59,6 +57,7 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     debug_path, path to the file where verbose will dump debug information
     """
     # Add map reduce or some other type of summarization function here.
+    """Possible to use the Kagi Summarizer, especially for long texts, limit is .3 dollars. https://kagi.com/summarizer/api.html"""
     processed_text = data["PaperContents"]
     if verbatim:
         relationships = {"Relations": data["Relations"]}
@@ -100,7 +99,7 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     return parsed_output.dict()  # Returns in dict format
 
 
-def clean_data(data_path, verbose=False) -> dict():
+def clean_data(data_path, verbose=False) -> dict:
     """Reads Json and removes list of user predictions"""
     with open(data_path, "r") as f:
         data = json.load(f)
@@ -135,14 +134,6 @@ def make_unique_name(relationship):
     variable_one = relationship.get("VariableOneName", "")
     variable_two = relationship.get("VariableTwoName", "")
     return variable_one + " -> " + variable_two
-
-def match_relation_to_paper():
-    """Reference passage ranking section https://huggingface.co/tasks/sentence-similarity"""
-    pass
-
-def obtain_papers_via_MLSE():
-    """Obtains relevant papers via the massive literature search engine"""
-    pass
 
 def captured_relations_pipeline(data_path, settings_path, debug_path: pathlib.Path):
     with open(settings_path, "r") as f:
