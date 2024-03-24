@@ -1,0 +1,185 @@
+New single file evaluation
+Results for test_paper_2.json
+{
+  "RelationshipClassificationScore": 1.0
+}
+Predictions
+{
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality.",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of substance-related mortality, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths.",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of alcohol-related deaths, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease.",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with elevated rates of chronic liver disease, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "SupportingText": "AI/AN status correlates with notably higher rates of drug-related issues.",
+      "Reasoning": "The text explicitly states that AI/AN status correlates with notably higher rates of drug-related issues, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use.",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit earlier initiation of substance use, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use.",
+      "Reasoning": "The text explicitly states that AI/AN adolescents exhibit higher rates of substance use, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents living on reservations.",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents living on reservations, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "SupportingText": "Substance use rates are particularly high among AI/AN adolescents who have dropped out of school.",
+      "Reasoning": "The text explicitly states that substance use rates are particularly high among AI/AN adolescents who have dropped out of school, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns.",
+      "Reasoning": "The text explicitly states that AI/AN adults who drink tend to engage in heavy, episodic drinking patterns, indicating a direct relationship between the two variables.",
+      "RelationshipClassification": "direct"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "SupportingText": "Surprisingly, a negative correlation was observed between AI/AN communities and substance availability.",
+      "Reasoning": "The text explicitly states that a negative correlation was observed between AI/AN communities and substance availability, indicating an inverse relationship between the two variables.",
+      "RelationshipClassification": "inverse"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "SupportingText": "A negative correlation was observed between AI/AN communities and trauma exposure.",
+      "Reasoning": "The text explicitly states that a negative correlation was observed between AI/AN communities and trauma exposure, indicating an inverse relationship between the two variables.",
+      "RelationshipClassification": "inverse"
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "SupportingText": "A negative correlation was observed between AI/AN communities and historical trauma.",
+      "Reasoning": "The text explicitly states that a negative correlation was observed between AI/AN communities and historical trauma, indicating an inverse relationship between the two variables.",
+      "RelationshipClassification": "inverse"
+    }
+  ]
+}
+Ground Truth
+{
+  "PaperTitle": "test_paper_2",
+  "PaperContents": "",
+  "Relations": [
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Substance-related mortality",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of substance-related mortality."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Alcohol-related deaths",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of alcohol-related deaths."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Chronic liver disease",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of chronic liver disease."
+    },
+    {
+      "VariableOneName": "AI/AN status",
+      "VariableTwoName": "Drug-related issues",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN status correlates with elevated rates of drug-related issues."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use initiation",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit earlier initiation of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Substance use rates",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Living on reservations",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents living on reservations exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adolescents",
+      "VariableTwoName": "Dropped out of school",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adolescents who have dropped out of school exhibit higher rates of substance use."
+    },
+    {
+      "VariableOneName": "AI/AN adults who drink",
+      "VariableTwoName": "Heavy, episodic drinking patterns",
+      "RelationshipClassification": "direct",
+      "IsCausal": "False",
+      "SupportingText": "AI/AN adults who drink tend to engage in heavy, episodic drinking patterns."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Substance availability",
+      "RelationshipClassification": "inverse",
+      "IsCausal": "False",
+      "SupportingText": "However, surprisingly a negative correlation was observed between AI/AN communities and substance availability, trauma exposure, and historical trauma."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Trauma exposure",
+      "RelationshipClassification": "inverse",
+      "IsCausal": "False",
+      "SupportingText": "However, surprisingly a negative correlation was observed between AI/AN communities and substance availability, trauma exposure, and historical trauma."
+    },
+    {
+      "VariableOneName": "AI/AN communities",
+      "VariableTwoName": "Historical trauma",
+      "RelationshipClassification": "inverse",
+      "IsCausal": "False",
+      "SupportingText": "However, surprisingly a negative correlation was observed between AI/AN communities and substance availability, trauma exposure, and historical trauma."
+    }
+  ]
+}

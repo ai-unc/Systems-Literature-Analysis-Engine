@@ -18,6 +18,14 @@ import json
 from pprint import pprint
 import yaml
 
+# Configure OpenAI API key
+from dotenv import load_dotenv
+load_dotenv()
+key = os.getenv("OPENAI_API_KEY")
+openai.api_key = key
+
+# Filepath Debug
+mypath = os.path.abspath("")
 
 class SingleRelation(BaseModel):
     VariableOneName: str
@@ -100,6 +108,8 @@ def clean_data(data_path, verbose=False) -> dict:
         relation["IsCausal"] = ""
         relation["SupportingText"] = ""
         relation["Attributes"] = ""
+    if verbose:
+        pprint(data)
     return data  
 
 
@@ -115,6 +125,15 @@ def extract_all_ordered_pairs(data):
     relations_text = "\n".join(variable_pairs)
     return relations_text
 
+def make_unique_names(relations):
+    """Takes a list of relations, and combines var one and var two names into the field UniqueName"""
+    for relationship in relations:
+        relationship["UniqueName"] = make_unique_name(relationship)
+
+def make_unique_name(relationship):
+    variable_one = relationship.get("VariableOneName", "")
+    variable_two = relationship.get("VariableTwoName", "")
+    return variable_one + " -> " + variable_two
 
 def captured_relations_pipeline(data_path, settings_path, debug_path: pathlib.Path):
     with open(settings_path, "r") as f:
@@ -126,15 +145,9 @@ def captured_relations_pipeline(data_path, settings_path, debug_path: pathlib.Pa
     output = extract_relationships(cleaned_data, set_prompt=prompt, verbose=verbose, model=model, debug_path=debug_path)
     return output
 
-
 if __name__ == "__main__":
-    """This section will not be run automatically if you import this file into another file."""
-    # Configure OpenAI API key
-    from dotenv import load_dotenv
-    load_dotenv()
-    key = os.getenv("OPENAI_API_KEY")
-    openai.api_key = key
-
-    captured_relations_pipeline(data_path="./pipeline_evaluator/standard_dataset/test_paper.json",
-                                settings_path="./pipelines/captured_relations_pipeline/pipeline_settings.yaml",
-                                debug_path=pathlib.Path("./pipelines/captured_relations_pipeline/debug_outputs"))
+    """This section configs the run's default debug settings for running the file without the evaluator"""
+    captured_relations_pipeline(data_path="../evaluation_datasets/multi_relation_dataset/test_paper.json",
+                                settings_path="../pipeline_settings.yaml",
+                                debug_path=pathlib.Path("./debug_outputs"))
+    pass
