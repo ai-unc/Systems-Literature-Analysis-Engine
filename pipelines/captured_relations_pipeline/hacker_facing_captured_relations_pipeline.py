@@ -1,22 +1,16 @@
 import langchain as lc
-from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import PydanticOutputParser
 from langchain.pydantic_v1 import BaseModel, Field, validator
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
-from langchain.schema import AIMessage, HumanMessage, SystemMessage
-from langchain.prompts.chat import (
-    ChatPromptTemplate,
-    SystemMessagePromptTemplate,
-    AIMessagePromptTemplate,
-    HumanMessagePromptTemplate,
-)
 import openai
 import pathlib
 import os
 import json
 from pprint import pprint
 import yaml
+from langchain_google_genai import ChatGoogleGenerativeAI
+from google.generativeai.types.safety_types import HarmBlockThreshold, HarmCategory
 
 
 class SingleRelation(BaseModel):
@@ -38,7 +32,7 @@ class ListOfRelations(BaseModel):
     Relations: list[SingleRelation]
 
 
-def extract_relationships(data, set_prompt=None, verbose = False, model = None, verbatim=False, debug_path=None, key=None):
+def extract_relationships(data, set_prompt=None, verbose = False, model = None, debug_path=None, key=None):
     """
     12/19/2023 (Function Last Updated)
     Data should be a python dictionary cleaned of all ground truth data. 
@@ -48,16 +42,13 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
     Verbatim will make it hard for the model to decide whether or not to include fields that were not in ground truth if you modify the SingleRelation class.
     debug_path, path to the file where verbose will dump debug information
     """
-    # Add map reduce or some other type of summarization function here.
-    """Possible to use the Kagi Summarizer, especially for long texts, limit is .3 dollars. https://kagi.com/summarizer/api.html"""
-    processed_text = data["PaperContents"]
-    if verbatim:
-        relationships = {"Relations": data["Relations"]}
-    else:
-        relationships = extract_all_ordered_pairs(data)
 
-    # Create Parser
-    parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation
+    # Extracts the full text of a paper into "processed_text", extracts all relevant relationships into "relationships".
+    processed_text = data["PaperContents"]
+    relationships = extract_all_ordered_pairs(data)
+
+    # Create Parser to ensure correct JSON formatting of LLM outputs.
+    parser = PydanticOutputParser(pydantic_object=ListOfRelations) #Refers to a class called SingleRelation.
 
     # Create the plain text prompt. Used some of langchain's functions to automatically create formated prompts. 
     prompt = PromptTemplate(
@@ -66,29 +57,36 @@ def extract_relationships(data, set_prompt=None, verbose = False, model = None, 
         partial_variables={"format_instructions":parser.get_format_instructions}
     )
     input_text = prompt.format_prompt(text=processed_text, relationships=relationships).to_string()
+
+    # Adds the prompt fed in to the LLM to a debug file so you can inspect it.
     if verbose:
-        with open(debug_path / "MultiVariablePipelineInput.txt", "a") as f:
+        with open(debug_path / "MultiVariablePipelineInput.txt", "a") as f:  # Appends to the file.
             f.write("="*70+f"\nPaper Analyzed: {data['PaperTitle']}"+"\nLLM Prompt:\n")
             f.write(input_text)
             f.write("\n\n\n")
-    human_message_prompt = HumanMessagePromptTemplate(prompt=prompt)
-    chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
-    completion_prompt = chat_prompt.format_prompt(text=processed_text, relationships=relationships).to_messages()
 
-    # Create LLM
-    model = ChatOpenAI(temperature=.0, openai_api_key=key, model_name=model)
+    # Create LLM.
+    model = ChatGoogleGenerativeAI(temperature=.0, google_api_key=key, model=model, safety_settings={HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE})
 
-    # Obtain completion from LLM
-    output = model(completion_prompt)
+    # Obtain response from LLM.
+    output = model.invoke(input_text)
+
+    # Writes response to a debug file for inspection.
     if verbose:
         with open(debug_path / "MultiVariablePipelineOutput.txt", "a") as f:
             f.write("="*70+f"\nPaper Analyzed: {data['PaperTitle']}"+"\nLLM Pipeline Output:\n")
             f.write(str(output.content))
             f.write("\n")
-    parsed_output = parser.parse(output.content) # Ensure content is in valid json format.
+
+    # Ensure content is in valid json format with parser.
+    parsed_output = parser.parse(output.content) 
+
+    # Prints where debug information has been stored and other telemetry.
     if verbose:
         print(f"\n=========\nSuccessful pipeline completion for {data['PaperTitle'][:50]}, debug information and results saved at {debug_path}")
-    return parsed_output.dict()  # Returns in dict format
+
+    # Returns json result in dict format.
+    return parsed_output.dict()  
 
 
 def clean_data(data_path, verbose=False) -> dict:
@@ -129,12 +127,13 @@ def captured_relations_pipeline(data_path, settings_path, debug_path: pathlib.Pa
 
 if __name__ == "__main__":
     """This section will not be run automatically if you import this file into another file."""
-    # Configure OpenAI API key
+    # Configures API keys.
     from dotenv import load_dotenv
     load_dotenv()
-    key = os.getenv("OPENAI_API_KEY")
+    key = os.getenv("GOOGLE_API_KEY")
     openai.api_key = key
 
+    # Configures file paths to use when running the pipeline from this file.
     captured_relations_pipeline(data_path="./pipeline_evaluator/standard_dataset/test_paper.json",
                                 settings_path="./pipelines/captured_relations_pipeline/pipeline_settings.yaml",
                                 debug_path=pathlib.Path("./pipelines/captured_relations_pipeline/debug_outputs"), 
